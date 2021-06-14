@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+
+body {
+    min-height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    height: 600px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px #00000023;
+}
+
+.child1 {
+    width: 100%;
+    background-image: linear-gradient(135deg, #2ec4ff 30%, #2e8fff);
+    border-radius: 20px 20px 0 0;
+    height: 55px;
+    color: #fff;
+    display: grid;
+    place-content: center;
+}
+
+.child2 {
+    width: 100%;
+    height: 470px;
+    overflow-y: scroll;
+    padding: 20px 23px 0 23px;
+}
+
+.child2::-webkit-scrollbar {
+    display: none;
+}
+
+.child3 {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 18px;
+}
+
+input {
+    outline: none;
+    margin: 0 17px 0 23px;
+    width: 300px; 
+    height: 40px;
+    box-shadow: inset 0 0 5px 2px #00000023;
+    border: none;
+    font-size: 16px;
+    color: #111017;
+    border-radius: 50px;
+    padding: 0 10px 0 15px;
+    caret-color: #2ec4ff;
+}
+
+input::placeholder {
+    color:rgba(122, 122, 122, 0.582);
+}
+
+
+
+.add {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    background-image: linear-gradient(135deg, #2ec4ff 30%, #2e8fff);
+    border-radius: 50px;
+    box-shadow: 0 0 5px 2px #00000023;
+    transition: 1s ease;
+}
+
+.add:hover {
+    box-shadow: 0 0 5px 2px #2ec4ff;
+    cursor: pointer;
+}
+
+.checkbox {
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50px;
+    border: 2px solid #2ec4ff;
+}
+
+.checkbox:hover {
+    animation-name: light;
+    animation-duration: 1.2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@keyframes light {
+    0% {
+        box-shadow: 0 0 0px 0px #2ec4ff86;
+    }
+    50%{
+        box-shadow: 0 0 3px 2px #4accff86;
+    }
+    100% {
+        box-shadow: 0 0 0px 0px #2ec4ff86;
+    }
+}
+
+.checked {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    margin: 0 5px 0 6px;
+    background-color: #B5E52C;
+    box-shadow: 0 0 5px 2px #b4e52c86;;
+}
+
+.checked:hover {
+    cursor: pointer;
+}
+
+.checked-text {
+    text-decoration: line-through;
+    color: #848484;
+    padding: 0 10px 0 10px;
+    flex-grow: 1;
+    max-width: 310px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    font-size: 18px;
+}
+
+.text {
+    padding: 0 10px 0 10px;
+    flex-grow: 1;
+    max-width: 310px;
+    color: #252b31;
+}
+
+.remove, img {
+    width: 20px;
+    height: auto;
+}
+
+.remove:hover {
+    animation-name: shake;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+    animation-delay: 0.2s;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(15deg);
+    }
+}

@@ -1,0 +1,135 @@
+body {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+}
+
+.grid {
+	display: grid;
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-columns:  repeat(5, 1fr);
+	grid-gap: 8px 8px;
+	width: 400px;
+	height: 400px;
+}
+
+.item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 4px;
+	border-radius: 15px;
+	background-color: #2ec4ff;
+	box-shadow:  inset 0px 0px 10px  #20bffd71;
+	text-align: center;
+	color: #eaf6ff;
+	font-size: 25px;
+}
+
+.item:hover {
+	cursor: pointer;
+}
+
+.green {
+	background-color: #98dd29;
+	box-shadow: 2px 2px 2px #98dd2970, -2px 0px 2px #98dd2970;	
+}
+
+.red {
+	background-color: #ff595e;
+	box-shadow: 2px 2px 2px #ff595e70, -2px 0px 2px #ff595e70;
+}
+
+#container {
+	width: 390px;
+}
+
+#gameMap {
+	width: 400px;
+	height: auto;
+}
+p {
+	width: 100%;
+	padding: 10px 10px;
+	background-color: #fcfcfc;
+	box-shadow: inset 0px 0px 5px  #b5b6b6bd;
+	border-radius: 10px;
+	color: #6d6d6d;
+	margin-left: 5px;
+	text-align: center;
+}
+
+h3 {
+	color: #6d6d6d;
+}
+
+.win {
+	background-color: #8ac926;
+	color: #fcfcfc;
+	box-shadow: inset 0px 0px 8px  #8ac926bd;
+}
+
+.gameover {
+	background-color: #ff595e;
+	color: #fcfcfc;
+	box-shadow: inset 0px 0px 8px  #ff595ebd;
+}
+
+#reset {
+	width: 20px;
+	height: 20px;
+	float: right;
+	cursor: pointer;
+	box-shadow:  0px 0px 8px  #b5b6b6bd;
+	padding: 8px;
+	border-radius: 10px;
+	margin-left: 8px;
+	background-color: #fcfcfc;	
+}
+
+#live {
+	width: 25px;
+	margin-right: 10px;
+	height: auto;
+}
+
+img:active {
+	background-color: #b5b6b6;
+	transform: scale(0.8);	
+}
+
+#answer {
+	display: flex;
+	align-items: center;
+}
+
+.rooles {
+	background-color: #fcfcfc;
+	box-shadow: inset 0px 0px 5px  #b5b6b6bd;
+	border-radius: 10px;
+	color: #6d6d6d;
+	font-weight: 600;
+	line-height: 1.6em;
+	height: 380px;
+	width: 200px;
+	padding: 10px;
+	margin: 70px 0 0px 20px;
+}
+
+#play {
+	background-color: #ffd60a;
+	color: #fcfcfc;
+	padding: 15px;
+	text-align: center;
+	font-size: 25px;
+	margin-top: 15px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#play:active {
+	background-color: #ffd60a;
+	box-shadow: 2px 2px 2px #ffd60a70, -2px 0px 2px #ffd60a70;
+}
